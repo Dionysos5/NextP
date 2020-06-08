@@ -27,3 +27,22 @@ for (let number = 1; number <= 100; number++) {
   else
     console.log(number);
 }
+
+//Chapter 2 : Code structure
+//Exercise 3: Chessboard
+let chessboard = '';
+const size = 32;
+for (let rows = 1; rows <= size; rows++) {
+  for (let columns = 1; columns <= size; columns++) {
+    if (columns % 2 != 0 && rows % 2 != 0)
+      chessboard += ' ';
+    else if (columns % 2 == 0 && rows % 2 == 0)
+      chessboard += ' ';
+    else
+      chessboard += '#';
+
+  }
+  chessboard += '\n';
+}
+
+console.log(chessboard);
