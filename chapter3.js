@@ -9,17 +9,17 @@ let min = function (a, b) {
   return b;
 }
 
-// function min(a, b) {
-//   if (a < b)
-//     return a;
-//   return b;
-//    }
-
 min = (a, b) => {
   if (a < b)
     return a;
   return b;
 }
+
+// function min(a, b) {
+//   if (a < b)
+//     return a;
+//   return b;
+//    }
 
 //Chapter 3 : Functions
 //Exercise 2: Recursion
@@ -37,9 +37,22 @@ let isEven = (number) => {
 
 }
 
-console.log(isEven(50));
-// → true
-console.log(isEven(75));
-// → false
-console.log(isEven(-1));
-// → ??
+
+//Chapter 3 : Functions
+//Exercise 3: Bean counting
+
+const countBs = (string) => {
+  let numberOfB = 0;
+  for (let count = 0; count < string.length; count++)
+    if (string[count] === 'B')
+      numberOfB++;
+  return numberOfB;
+}
+
+const countChar = (string, char) => {
+  let numberOfChar = 0;
+  for (let count = 0; count < string.length; count++)
+    if (string[count] === char)
+      numberOfChar++;
+  return numberOfChar;
+}
