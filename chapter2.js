@@ -46,3 +46,4 @@ for (let rows = 1; rows <= size; rows++) {
 }
 
 console.log(chessboard);
+
