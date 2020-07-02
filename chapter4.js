@@ -1,4 +1,6 @@
-// Your code here.
+//Chapter 4
+//Exercise 1 : Sum of Range
+
 const range = (start, end, step) => {
   let array = [];
   for (let i = start, j = 0; i <= end; i += step || 1, j++)
